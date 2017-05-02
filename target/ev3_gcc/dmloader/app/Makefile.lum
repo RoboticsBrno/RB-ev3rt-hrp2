@@ -120,7 +120,7 @@ ALL_CXXOBJS += $(APPL_CXXOBJS)
 ALL_LIBS += $(LIBS) $(APPL_LIBS)
 $(OBJFILE): $(CFG_OUT_SRCS) $(ALL_OBJS) $(ALL_CXXOBJS) $(WORKSPACE_LIB_TO_BUILD)
 	$(call print_cmd, "LD", $@)
-	@$(LINK) $(LDFLAGS) -o $(OBJFILE) $(ALL_OBJS) $(ALL_CXXOBJS) $(ALL_LIBS) -lm -lc -lgcc
+	@$(LINK) $(LDFLAGS) -o $(OBJFILE) $(ALL_OBJS) $(ALL_CXXOBJS) $(ALL_LIBS) -lstdc++ -lm -lc -lgcc
 #arm-none-eabi-strip -K _module_cfg_entry_num -K _module_cfg_tab -K _module_pil_version --strip-all app
     
 #
