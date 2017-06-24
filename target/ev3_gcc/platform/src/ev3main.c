@@ -102,6 +102,7 @@ void ev3_main_task(intptr_t exinf) {
 	syslog(LOG_NOTICE, " ");
 	syslog(LOG_NOTICE, "Powered by TOPPERS/HRP2 RTOS");
 	syslog(LOG_NOTICE, "Initialization is completed..");
+	syslog(LOG_NOTICE, "Edited JarekParal 24/6/17");
 
     // Pause the application when using standalone mode
 #if !defined(BUILD_LOADER)
