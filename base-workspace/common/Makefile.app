@@ -576,8 +576,8 @@ ifeq ($(TOOL),gcc)
     GCC_TARGET_PREFIX =
   endif
   CC = $(GCC_TARGET_PREFIX)gcc -std=gnu99
-  #CXX = $(GCC_TARGET_PREFIX)g++ -std=gnu++11 -fno-exceptions
-  CXX = $(GCC_TARGET_PREFIX)g++ -std=gnu++11
+  #CXX = $(GCC_TARGET_PREFIX)g++ -std=c++1z -fno-exceptions
+  CXX = $(GCC_TARGET_PREFIX)g++ -std=c++1z
   AS = $(GCC_TARGET_PREFIX)as
   LD = $(GCC_TARGET_PREFIX)ld
   AR = $(GCC_TARGET_PREFIX)ar

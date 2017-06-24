@@ -65,7 +65,7 @@ CLEAN_FILES += $(CFG1_OUT) cfg1_out.o cfg1_out.c cfg1_out.syms cfg1_out.srec $(C
 #LINK = arm-none-eabi-ld -nostdlib -nostartfiles
 #CC = arm-none-eabi-gcc -shared -fPIC -nostdlib -std=c99 -fno-strict-aliasing -mcpu=arm926ej-s -mlittle-endian -D__TARGET_ARCH_ARM=5
 CC = arm-none-eabi-gcc -fPIC -mno-pic-data-is-text-relative -nostdlib -std=gnu99 -fno-strict-aliasing -mcpu=arm926ej-s -mlittle-endian -D__TARGET_ARCH_ARM=5
-CXX = arm-none-eabi-g++ -fPIC -mno-pic-data-is-text-relative -nostdlib -std=gnu++11 -fno-strict-aliasing -mcpu=arm926ej-s -mlittle-endian -D__TARGET_ARCH_ARM=5
+CXX = arm-none-eabi-g++ -fPIC -mno-pic-data-is-text-relative -nostdlib -std=c++1z -fno-strict-aliasing -mcpu=arm926ej-s -mlittle-endian -D__TARGET_ARCH_ARM=5
 #LINK = arm-none-eabi-ld -nostdlib -shared -fPIC
 
 # -n to make file size small
