@@ -1,8 +1,21 @@
 :: Script for building EV3RT application
 :: Author: Jaroslav Páral (jarekparal) 
-:: Version: 1.1 (2019-07-02)
+:: Version: 1.2 (2019-11-03)
 
-set "cygwin=C:\tools\cygwin"
+setlocal enabledelayedexpansion
+@set "cygwin=C:\tools\cygwin"
+
+@IF NOT EXIST %cygwin% (
+    set "cygwin=C:\cygwin64"
+
+    echo %cygwin%
+    @IF NOT EXIST !cygwin! (
+        echo The Cygwin tools is not available in expected paths:
+        echo - C:\cygwin64
+        echo - C:\tools\cygwin
+        GOTO END
+    )
+)
 
 @IF "%1"=="" GOTO NO_PARAM
 @IF "%1"=="-b" GOTO BUILD
