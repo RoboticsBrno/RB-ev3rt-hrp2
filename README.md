@@ -1,9 +1,14 @@
-# Usage
+# RB-ev3rt-hrp2 [![Build Status](https://travis-ci.org/RoboticsBrno/RB-ev3rt-hrp2.svg?branch=master)](https://travis-ci.org/RoboticsBrno/RB-ev3rt-hrp2)
 
-Please check our [website](http://ev3rt-git.github.io/) for usage.
+Fork of the [ev3rt-git/ev3rt-hrp2](https://github.com/ev3rt-git/ev3rt-hrp2) repository which add support for C++ programming API (EV3RT CXX) similar to graphical programming environment in LEGO MINDSTORMS EV3 Software.
 
-# Build status
+[EV3RT CXX English API documentation](https://roboticsbrno.github.io/RB-ev3rt-hrp2-sdk/).
 
-Status               | Platform
---------------       | ------ 
-[![Build Status](https://travis-ci.org/ev3rt-git/ev3rt-hrp2.svg?branch=master)](https://travis-ci.org/ev3rt-git/ev3rt-hrp2) | Ubuntu 14.04
+Tutorials (unfortunately just in Czech): https://rb3rt.readthedocs.io/cs/latest/
+
+Or you can also use the information from official [ev3rt website](http://ev3rt-git.github.io/).
+
+## Connected repositories
+
+- hhttps://github.com/RoboticsBrno/RB-ev3rt-hrp2-sdk
+- https://github.com/RoboticsBrno/RB3rt.git
