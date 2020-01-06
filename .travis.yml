@@ -31,6 +31,6 @@ before_deploy:
   
 deploy:
   provider: releases
-  api_key: travis-ci_RB-ev3rt-hrp2_release_github_oauth
+  api_key: $travis-ci_RB-ev3rt-hrp2_release_github_oauth
   file: "RB3rt.zip"
   skip_cleanup: true
