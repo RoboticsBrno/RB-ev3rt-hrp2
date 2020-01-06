@@ -21,3 +21,16 @@ before_script:
  - cd ../sdk/workspace
 
 script: make app=helloev3
+
+before_deploy:
+  - git config --local user.name "JarakParal"
+  - git config --local user.email "paral.jarek@gmail.com"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
+  - zip -r RB3rt.zip .
+  
+deploy:
+  provider: releases
+  api_key: travis-ci_RB-ev3rt-hrp2_release_github_oauth
+  file: "RB3rt.zip"
+  skip_cleanup: true
